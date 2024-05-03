@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">OneClick Pets</string>
+    <string name="bienvenido_a_OneClick_Pets" translatable="false">Bienvenido a OneClick Pets</string>
+</resources>
