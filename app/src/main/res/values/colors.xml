@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="ColorUno">#FF000000</color>
-    <color name="ColorDos">#FFFFFFFF</color>
+    <color name="ColorNegro">#FF000000</color>
+    <color name="ColorFondo">#FFFFFFFF</color>
+    <color name="ColorBoton">#FCA311</color>
+    <color name="ColorIconos">#FED188</color>
+    <color name="ColorRelleno">#FFFAF1</color>
 </resources>
