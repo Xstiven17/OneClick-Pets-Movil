@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarritoComprasFragment"
+    android:background="@color/ColorFondo">
+
+    <LinearLayout
+        android:id="@+id/rectan1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/ColorNegro"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnatras"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_atras"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:text="Carrito de Compras"
+            android:textColor="@color/ColorFondo"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/Recy_carrito"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ColorRelleno"
+    android:layout_weight="1"
+    android:layout_marginTop="95dp"/>
+
+    <LinearLayout
+        android:id="@+id/rectan2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ColorNegro"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btncomprar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comprar"
+            android:background="@color/ColorBoton"
+            android:textColor="@color/ColorNegro"
+            android:textSize="25dp"
+            android:onClick="comprar"
+            android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
