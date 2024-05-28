@@ -12,14 +12,15 @@
         android:layout_height="80dp"
         android:background="@color/ColorNegro"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true">
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             android:src="@drawable/ic_atras"/>
     </LinearLayout>
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -37,7 +38,9 @@
             android:background="@android:color/white"
             android:elevation="4dp"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusableInTouchMode="true">
 
             <TextView
                 android:id="@+id/tv_account_settings_title"
@@ -47,7 +50,8 @@
                 android:text="Configuración de cuenta"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                />
 
             <View
                 android:layout_width="match_parent"
@@ -63,7 +67,9 @@
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:background="@color/ColorRelleno"
-                android:padding="30dp">
+                android:padding="30dp"
+                android:contextClickable="true"
+                >
 
                 <ImageView
                     android:id="@+id/iv_profile_picture"
@@ -71,7 +77,9 @@
                     android:layout_height="60dp"
                     android:layout_marginEnd="50dp"
                     android:contentDescription="@string/descrip_perfil_icon"
-                    android:src="@drawable/perfil" />
+                    android:src="@drawable/perfil"
+
+                    />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -102,8 +110,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/ColorRelleno"
                 android:orientation="vertical"
-                android:layout_marginTop="8dp"
-                >
+                android:layout_marginTop="8dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -114,17 +122,19 @@
                     android:orientation="horizontal"
                     android:padding="8dp">
 
-                   <ImageView
+                    <ImageView
                         android:id="@+id/iv_account_data"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="4dp"
                         android:contentDescription="@string/descrip_user_icon"
                         android:src="@drawable/usuario" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:id="@+id/tv_account_data"
                             android:layout_width="wrap_content"
@@ -142,10 +152,7 @@
                             android:text="lorem impsilorem lorem lorem impsilorem lorem"
                             android:textColor="@android:color/black"
                             android:textSize="16sp" />
-
                     </LinearLayout>
-
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -158,17 +165,21 @@
                     android:orientation="horizontal"
                     android:padding="1dp">
 
-                   <ImageView
+                    <ImageView
                         android:id="@+id/iv_cards"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="4dp"
                         android:contentDescription="@string/descrip_tarjeta_credit"
-                        android:src="@drawable/tarjetas" />
+                        android:src="@drawable/tarjetas"
+                        android:onClick="true"
+                        tools:ignore="OnClick" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:id="@+id/tv_cards"
                             android:layout_width="wrap_content"
@@ -177,6 +188,7 @@
                             android:text="Tarjetas"
                             android:textColor="@android:color/black"
                             android:textSize="16sp" />
+
                         <TextView
                             android:id="@+id/tv_descrip_tarjeta"
                             android:layout_width="wrap_content"
@@ -198,17 +210,19 @@
                     android:orientation="horizontal"
                     android:padding="8dp">
 
-                   <ImageView
+                    <ImageView
                         android:id="@+id/iv_security"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="4dp"
                         android:contentDescription="@string/descrip_seguridad_icon"
                         android:src="@drawable/seguridad" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:id="@+id/tv_security"
                             android:layout_width="wrap_content"
@@ -217,6 +231,7 @@
                             android:text="Seguridad"
                             android:textColor="@android:color/black"
                             android:textSize="16sp" />
+
                         <TextView
                             android:id="@+id/tv_descrip_seguridad"
                             android:layout_width="wrap_content"
@@ -226,8 +241,8 @@
                             android:textColor="@android:color/black"
                             android:textSize="16sp" />
                     </LinearLayout>
-
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -246,10 +261,12 @@
                         android:layout_marginEnd="4dp"
                         android:contentDescription="@string/descrip_delete_icon"
                         android:src="@drawable/basura" />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:id="@+id/tv_delete_account"
                             android:layout_width="wrap_content"
@@ -258,6 +275,7 @@
                             android:text="Eliminar tu cuenta"
                             android:textColor="@android:color/black"
                             android:textSize="16sp" />
+
                         <TextView
                             android:id="@+id/tv_descrip_elim_cta"
                             android:layout_width="wrap_content"
@@ -267,33 +285,31 @@
                             android:textColor="@android:color/black"
                             android:textSize="16sp" />
                     </LinearLayout>
-
-                    </LinearLayout>
-
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-
     </ScrollView>
+
     <LinearLayout
-    android:id="@+id/rectan2"
-    android:layout_width="match_parent"
-    android:layout_height="80dp"
-    android:layout_alignParentBottom="true"
-    android:background="@color/ColorNegro"
-    android:orientation="vertical"
-    android:gravity="center">
+        android:id="@+id/rectan2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ColorNegro"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Informacion legal | Politicas de privacidad"
-        android:textColor="@color/ColorFondo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informacion legal | Politicas de privacidad"
+            android:textColor="@color/ColorFondo"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Copyrigth © 2022 | OneClick Pets"
-        android:textColor="@color/ColorFondo"/>
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyrigth © 2022 | OneClick Pets"
+            android:textColor="@color/ColorFondo"/>
+    </LinearLayout>
 
 </RelativeLayout>
