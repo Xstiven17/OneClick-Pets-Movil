@@ -123,9 +123,9 @@
             android:id="@+id/edit4"
             android:layout_width="390dp"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:textColor="@color/ColorNegro"
-            android:textSize="15dp"
-            android:inputType="textPassword"/>
+            android:textSize="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
