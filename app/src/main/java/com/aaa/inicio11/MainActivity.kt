@@ -10,6 +10,6 @@ class MainActivity : AppCompatActivity() {
       setTheme(R.style.Theme_Inicio11)
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash_screen)
+        setContentView(R.layout.fragment_config_cuenta)
     }
 }

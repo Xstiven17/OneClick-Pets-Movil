@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="70dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="16dp"
             android:background="@android:color/white"
@@ -59,11 +59,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:background="@color/ColorRelleno"
-                android:padding="20dp">
+                android:padding="30dp">
 
                 <ImageView
                     android:id="@+id/iv_profile_picture"
@@ -102,11 +102,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/ColorRelleno"
                 android:orientation="vertical"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="8dp"
                 >
-
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -159,7 +156,7 @@
                     android:focusable="true"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="8dp">
+                    android:padding="1dp">
 
                    <ImageView
                         android:id="@+id/iv_cards"
@@ -275,7 +272,28 @@
 
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>
 
+    </ScrollView>
+    <LinearLayout
+    android:id="@+id/rectan2"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/ColorNegro"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informacion legal | Politicas de privacidad"
+        android:textColor="@color/ColorFondo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyrigth © 2022 | OneClick Pets"
+        android:textColor="@color/ColorFondo"/>
+</LinearLayout>
 
 </RelativeLayout>
