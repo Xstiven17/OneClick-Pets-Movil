@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".InicioSesionFragment">
 
     <LinearLayout
@@ -64,31 +65,42 @@
         android:background="@color/ColorFondo"
         android:layout_marginTop="16dp"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp">
-
-        <EditText
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="377dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Contraseña"
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:background="@color/ColorFondo"
-            android:textColor="@color/ColorNegro"/>
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_visibility"
-            android:contentDescription="Mostrar/Ocultar contraseña"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="8dp"
-            />
-    </LinearLayout>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/ColorFondo"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/ColorNegro" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/ColorNegro"
+                    android:background="@color/ColorFondo" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
 
     <CheckBox
         android:layout_width="wrap_content"
