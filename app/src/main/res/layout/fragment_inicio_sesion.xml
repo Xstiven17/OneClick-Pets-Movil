@@ -3,11 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-    android:background="@color/ColorFondo"
-=======
     xmlns:app="http://schemas.android.com/apk/res-auto"
->>>>>>> 89ab7a0caf1dd811575df8b7f00bf71ca576d429
     tools:context=".InicioSesionFragment">
 
     <LinearLayout
@@ -51,103 +47,77 @@
         </ImageView>
     </LinearLayout>
 
+
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-        android:layout_below="@id/perfil"
-    android:padding="16dp">
-
-    <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nombre Usuario"
-        android:inputType="text"
-        android:padding="10dp"
-        android:textColor="@color/ColorNegro"
-        android:background="@color/ColorFondo"
-        android:layout_marginTop="16dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/perfil"
+        android:padding="16dp">
 
-        <LinearLayout
-            android:layout_width="377dp"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="horizontal">
+            android:hint="Nombre Usuario"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/ColorNegro"
+            android:background="@color/ColorFondo"
+            android:layout_marginTop="16dp"/>
 
-<<<<<<< HEAD
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:endIconMode="password_toggle">
 
-            android:contentDescription="Mostrar/Ocultar contraseña"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="8dp"
-            />
-    </LinearLayout>
-=======
-            <EditText
-                android:layout_width="0dp"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/ColorFondo"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
                 android:padding="10dp"
-                android:textColor="@color/ColorNegro" />
+                android:textColor="@color/ColorNegro"
+                android:background="@color/ColorFondo" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                app:endIconMode="password_toggle">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etPassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Contraseña"
-                    android:inputType="textPassword"
-                    android:padding="10dp"
-                    android:textColor="@color/ColorNegro"
-                    android:background="@color/ColorFondo" />
-
-            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-        </LinearLayout>
->>>>>>> 89ab7a0caf1dd811575df8b7f00bf71ca576d429
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Recordar Contraseña"
-        android:layout_marginTop="16dp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recordar Contraseña"
+            android:layout_marginTop="16dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Recuperar Contraseña"
-        android:textColor="@color/ColorAzulLink"
-        android:layout_marginTop="16dp"
-        android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recuperar Contraseña"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Iniciar Sesion"
             android:layout_marginTop="16dp"
             android:background="@color/ColorBoton"
-            android:text="Iniciar Sesion"
             android:textColor="@color/ColorNegro" />
 
         <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Registrarse"
-        android:layout_marginTop="8dp"
-        android:background="@color/ColorBoton"
-        android:textColor="@color/ColorNegro" />
-</LinearLayout>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:layout_marginTop="8dp"
+            android:background="@color/ColorBoton"
+            android:textColor="@color/ColorNegro" />
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/rectan2"
