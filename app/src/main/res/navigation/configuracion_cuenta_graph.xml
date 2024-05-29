@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/configuracion_cuenta_graph"
+    app:startDestination="@id/configCuentaFragment">
+
+    <fragment
+        android:id="@+id/configCuentaFragment"
+        android:name="com.aaa.inicio11.ConfigCuentaFragment"
+        android:label="fragment_config_cuenta"
+        tools:layout="@layout/fragment_config_cuenta" />
+</navigation>

@@ -3,12 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-    android:background="@color/ColorFondo"
-=======
-    xmlns:app="http://schemas.android.com/apk/res-auto"
->>>>>>> 89ab7a0caf1dd811575df8b7f00bf71ca576d429
-    tools:context=".InicioSesionFragment">
+
+    android:background="@color/ColorFondo">
+
 
     <LinearLayout
         android:id="@+id/rectan1"
@@ -75,7 +72,6 @@
             android:layout_marginTop="15dp"
             android:orientation="horizontal">
 
-<<<<<<< HEAD
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -84,8 +80,8 @@
             android:layout_gravity="center_vertical"
             android:layout_marginStart="8dp"
             />
-    </LinearLayout>
-=======
+        </LinearLayout>
+
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -100,13 +96,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:endIconMode="password_toggle">
+                tools:endIconMode="password_toggle">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Contraseña"
+                    android:hint="@string/contrase_a"
                     android:inputType="textPassword"
                     android:padding="10dp"
                     android:textColor="@color/ColorNegro"
@@ -116,7 +112,6 @@
 
 
         </LinearLayout>
->>>>>>> 89ab7a0caf1dd811575df8b7f00bf71ca576d429
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -147,7 +142,7 @@
         android:layout_marginTop="8dp"
         android:background="@color/ColorBoton"
         android:textColor="@color/ColorNegro" />
-</LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/rectan2"

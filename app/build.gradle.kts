@@ -36,15 +36,20 @@ android {
         jvmTarget = "1.8"
     }
 
-    viewBinding {
-        enable = true
+    buildFeatures {
+        viewBinding = true
     }
 }
 
 dependencies {
 
+    val navVersion = "2.7.7"
+    //component navigation
+    implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
+    implementation("android.arch.navigation:navigation-ui-ktx:$navVersion")
+
     implementation("androidx.core:core-ktx:1.13.1")
-    implementation("com.google.android.material:material:1.6.0")
+    implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.fragment:fragment-ktx:1.7.1")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("androidx.appcompat:appcompat:1.6.1")
