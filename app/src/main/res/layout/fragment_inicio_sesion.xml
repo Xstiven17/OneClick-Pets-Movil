@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/ColorFondo"
     tools:context=".InicioSesionFragment">
 
     <LinearLayout
@@ -83,7 +84,7 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_visibility"
+
             android:contentDescription="Mostrar/Ocultar contraseña"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="8dp"
@@ -100,19 +101,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Recuperar Contraseña"
-        android:textColor="@android:color/holo_blue_light"
+        android:textColor="@color/ColorAzulLink"
         android:layout_marginTop="16dp"
         android:layout_gravity="center_horizontal" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Iniciar Sesion"
-        android:layout_marginTop="16dp"
-        android:background="@color/ColorBoton"
-        android:textColor="@color/ColorNegro" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/ColorBoton"
+            android:text="Iniciar Sesion"
+            android:textColor="@color/ColorNegro" />
 
-    <Button
+        <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Registrarse"
@@ -120,13 +121,6 @@
         android:background="@color/ColorBoton"
         android:textColor="@color/ColorNegro" />
 </LinearLayout>
-
-
-
-
-
-
-
 
     <LinearLayout
         android:id="@+id/rectan2"
@@ -149,6 +143,4 @@
             android:text="Copyrigth © 2022 | OneClick Pets"
             android:textColor="@color/ColorFondo"/>
     </LinearLayout>
-
-
 </RelativeLayout>
