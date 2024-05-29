@@ -21,37 +21,29 @@ class ConfigCuentaFragment : Fragment() {
         _binding = FragmentConfigCuentaBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        // Set click listeners and add logic
-        binding.rectan2.setOnClickListener {
-            // Handle click for rectan1
+        binding.rectan2Config.setOnClickListener {
             Toast.makeText(requireContext(), "Rectan1 clicked", Toast.LENGTH_SHORT).show()
         }
 
-        binding.ivProfilePicture.setOnClickListener {
-            // Handle click for profile picture
+        binding.PerfilConfig.setOnClickListener {
             Toast.makeText(requireContext(), "Profile picture clicked", Toast.LENGTH_SHORT).show()
         }
 
-        binding.ivAccountData.setOnClickListener {
-            // Handle click for account data
+        binding.DatoCuenta.setOnClickListener {
             Toast.makeText(requireContext(), "Account data clicked", Toast.LENGTH_SHORT).show()
         }
 
-        binding.ivCards.setOnClickListener {
-            // Handle click for cards
+        binding.TarjetConfig.setOnClickListener {
             Toast.makeText(requireContext(), "Cards clicked", Toast.LENGTH_SHORT).show()
         }
 
-        binding.ivSecurity.setOnClickListener {
-            // Handle click for security
+        binding.SeguridadConfig.setOnClickListener {
             Toast.makeText(requireContext(), "Security clicked", Toast.LENGTH_SHORT).show()
         }
 
-        binding.ivDeleteAccount.setOnClickListener {
-            // Handle click for delete account
+        binding.DeleteConfig.setOnClickListener {
             Toast.makeText(requireContext(), "Delete account clicked", Toast.LENGTH_SHORT).show()
         }
-
         return view
     }
 

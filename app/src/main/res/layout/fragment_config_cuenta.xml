@@ -7,7 +7,7 @@
     tools:context=".ConfigCuentaFragment"
     >
     <LinearLayout
-        android:id="@+id/rectan1"
+        android:id="@+id/rectan1Config"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/ColorNegro"
@@ -43,7 +43,7 @@
             android:focusableInTouchMode="true">
 
             <TextView
-                android:id="@+id/tv_account_settings_title"
+                android:id="@+id/TitleConfig"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -72,11 +72,11 @@
                 >
 
                 <ImageView
-                    android:id="@+id/iv_profile_picture"
+                    android:id="@+id/PerfilConfig"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginEnd="50dp"
-                    android:contentDescription="@string/descrip_perfil_icon"
+                    android:contentDescription="Descripcion Perfil"
                     android:src="@drawable/perfil"
 
                     />
@@ -113,6 +113,7 @@
                 android:layout_marginTop="8dp">
 
                 <LinearLayout
+                    android:id="@+id/DatoCuenta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -123,7 +124,7 @@
                     android:padding="8dp">
 
                     <ImageView
-                        android:id="@+id/iv_account_data"
+                        android:id="@+id/perfil2Config"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="4dp"
@@ -156,6 +157,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/TarjetConfig"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -166,7 +168,6 @@
                     android:padding="1dp">
 
                     <ImageView
-                        android:id="@+id/iv_cards"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="4dp"
@@ -201,6 +202,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/SeguridadConfig"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -211,7 +213,6 @@
                     android:padding="8dp">
 
                     <ImageView
-                        android:id="@+id/iv_security"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="4dp"
@@ -244,6 +245,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/DeleteConfig"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -255,7 +257,6 @@
                     android:padding="8dp">
 
                     <ImageView
-                        android:id="@+id/iv_delete_account"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="4dp"
@@ -291,7 +292,7 @@
     </ScrollView>
 
     <LinearLayout
-        android:id="@+id/rectan2"
+        android:id="@+id/rectan2Config"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_alignParentBottom="true"

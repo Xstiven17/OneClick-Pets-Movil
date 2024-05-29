@@ -17,16 +17,17 @@ class RegVendedorFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-
     ): View? {
         _binding = FragmentRegVendedorBinding.inflate(inflater, container, false)
-        return binding.root
-    }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
 
+        setupListeners()
+        return binding.root
+
+    }
+
+    private fun setupListeners() {
         binding.btnatras.setOnClickListener {
-            activity?.onBackPressed()
+            Toast.makeText(requireContext(), "Atras", Toast.LENGTH_SHORT).show()
         }
 
         binding.boton1.setOnClickListener {
