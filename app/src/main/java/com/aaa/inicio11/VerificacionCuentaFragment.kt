@@ -12,11 +12,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 
-
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-
 class VerificacionCuentaFragment : Fragment() {
 
     private lateinit var digit1: EditText
@@ -46,7 +41,6 @@ class VerificacionCuentaFragment : Fragment() {
         digit4.addTextChangedListener(textWatcher)
 
         btnReenviar.setOnClickListener {
-            // Implementar lógica para reenviar el correo de verificación
             Toast.makeText(activity, "Correo de verificación reenviado", Toast.LENGTH_SHORT).show()
         }
 
