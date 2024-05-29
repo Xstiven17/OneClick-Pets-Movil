@@ -23,6 +23,7 @@ class ConfigCuentaFragment : Fragment() {
         _binding = FragmentConfigCuentaBinding.inflate(inflater, container, false)
         return binding.root
 
+
         binding.ivSecurity.bringToFront()
         binding.ivCards.bringToFront()
         binding.ivAccountData.bringToFront()
@@ -57,8 +58,8 @@ class ConfigCuentaFragment : Fragment() {
             Toast.makeText(activity, "Imagen de perfil clickeado", Toast.LENGTH_SHORT).show()
         }
 
-    }
 
+}
 }
 
 

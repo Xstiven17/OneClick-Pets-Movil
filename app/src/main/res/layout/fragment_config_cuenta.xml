@@ -7,7 +7,7 @@
     tools:context=".ConfigCuentaFragment">
 
     <LinearLayout
-        android:id="@+id/rectan1"
+        android:id="@+id/rectan1Config"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/ColorNegro"
@@ -27,8 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp"
-        android:layout_below="@id/rectan1"
-        android:layout_above="@id/rectan2">
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,7 +43,7 @@
             android:padding="16dp">
 
             <TextView
-                android:id="@+id/tv_account_settings_title"
+                android:id="@+id/TitleConfig"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -74,7 +73,7 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginEnd="50dp"
-                    android:contentDescription="@string/descrip_perfil_icon"
+                    android:contentDescription="Descripcion Perfil"
                     android:src="@drawable/perfil"
                     android:clickable="true"
                     android:focusable="true">
@@ -113,6 +112,7 @@
                 android:layout_marginTop="5dp">
 
                 <LinearLayout
+                    android:id="@+id/DatoCuenta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -157,6 +157,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/TarjetConfig"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -203,6 +204,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/SeguridadConfig"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
@@ -249,6 +251,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/DeleteConfig"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
@@ -299,7 +302,7 @@
     </ScrollView>
 
     <LinearLayout
-        android:id="@+id/rectan2"
+        android:id="@+id/rectan2Config"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_alignParentBottom="true"
