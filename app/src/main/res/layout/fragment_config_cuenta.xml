@@ -26,15 +26,14 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
-        >
+        android:padding="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="70dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="16dp"
             android:background="@android:color/white"
@@ -143,12 +142,9 @@
                             android:layout_marginStart="10dp"
                             android:text="Datos de cuenta"
                             android:textColor="@android:color/black"
-<<<<<<< HEAD
                             android:textStyle="bold"
                             android:textSize="16sp" />
-=======
-                            android:textSize="16sp"/>
->>>>>>> 62f4c71cb1a151cb3e90f5e181d92205149c5411
+
 
                         <TextView
                             android:id="@+id/tv_descrip_datos_cta"
