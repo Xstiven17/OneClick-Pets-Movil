@@ -1,5 +1,6 @@
 package com.aaa.inicio11
 
+import android.health.connect.datatypes.units.Length
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import android.widget.Toast
 import com.aaa.inicio11.databinding.FragmentConfigCuentaBinding
 
 
+@Suppress("UNREACHABLE_CODE")
 class ConfigCuentaFragment : Fragment() {
 
     private var _binding: FragmentConfigCuentaBinding? = null
@@ -19,39 +21,54 @@ class ConfigCuentaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentConfigCuentaBinding.inflate(inflater, container, false)
-        val view = binding.root
+        return binding.root
 
-        binding.rectan2Config.setOnClickListener {
-            Toast.makeText(requireContext(), "Rectan1 clicked", Toast.LENGTH_SHORT).show()
+
+        binding.ivSecurity.bringToFront()
+        binding.ivCards.bringToFront()
+        binding.ivAccountData.bringToFront()
+        binding.ivDeleteAccount.bringToFront()
+        binding.ivProfile.bringToFront()
+
+
+
+
+        // Configuración del click listener para el ImageButton ivSecurity
+        binding.ivSecurity.setOnClickListener {
+            Toast.makeText(activity, "Seguridad clickeado", Toast.LENGTH_SHORT).show()
         }
 
-        binding.PerfilConfig.setOnClickListener {
-            Toast.makeText(requireContext(), "Profile picture clicked", Toast.LENGTH_SHORT).show()
+        // Configuración del click listener para el ImageButton ivCards
+        binding.ivCards.setOnClickListener {
+            Toast.makeText(activity, "Tarjetas clickeado", Toast.LENGTH_SHORT).show()
         }
 
-        binding.DatoCuenta.setOnClickListener {
-            Toast.makeText(requireContext(), "Account data clicked", Toast.LENGTH_SHORT).show()
+        // Configuración del click listener para el ImageView ivAccountData
+        binding.ivAccountData.setOnClickListener {
+            Toast.makeText(activity, "Datos de cuenta clickeado", Toast.LENGTH_SHORT).show()
         }
 
-        binding.TarjetConfig.setOnClickListener {
-            Toast.makeText(requireContext(), "Cards clicked", Toast.LENGTH_SHORT).show()
+        // Configuración del click listener para el ImageView ivDeleteAccount
+        binding.ivDeleteAccount.setOnClickListener {
+            Toast.makeText(activity, "Eliminar cuenta clickeado", Toast.LENGTH_SHORT).show()
         }
 
-        binding.SeguridadConfig.setOnClickListener {
-            Toast.makeText(requireContext(), "Security clicked", Toast.LENGTH_SHORT).show()
+        // Configuración del click listener para el ImageView ivProfilePicture
+        binding.ivProfile.setOnClickListener {
+            Toast.makeText(activity, "Imagen de perfil clickeado", Toast.LENGTH_SHORT).show()
         }
 
-        binding.DeleteConfig.setOnClickListener {
-            Toast.makeText(requireContext(), "Delete account clicked", Toast.LENGTH_SHORT).show()
-        }
-        return view
-    }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
 }
+}
+
+
+
+
+
+
+
+
 
 
 

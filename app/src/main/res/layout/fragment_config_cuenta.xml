@@ -4,43 +4,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ColorFondo"
-    tools:context=".ConfigCuentaFragment"
-    >
+    tools:context=".ConfigCuentaFragment">
+
     <LinearLayout
         android:id="@+id/rectan1Config"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/ColorNegro"
         android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:clickable="true"
-        android:focusable="true">
+        android:orientation="horizontal">
         <ImageView
+            android:id="@+id/iv_back"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
-            android:src="@drawable/ic_atras"/>
+            android:src="@drawable/ic_atras"
+            android:clickable="true"
+            android:focusable="true"/>
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">
+        android:padding="16dp"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="1dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="16dp"
             android:background="@android:color/white"
             android:elevation="4dp"
             android:orientation="vertical"
-            android:padding="16dp"
-            android:clickable="true"
-            android:focusableInTouchMode="true">
+            android:padding="16dp">
 
             <TextView
                 android:id="@+id/TitleConfig"
@@ -50,36 +50,35 @@
                 android:text="Configuración de cuenta"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                android:background="@android:color/darker_gray" />
+                android:background="@android:color/darker_gray"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:background="@color/ColorRelleno"
-                android:padding="30dp"
-                android:contextClickable="true"
-                >
+                android:padding="25dp">
 
-                <ImageView
-                    android:id="@+id/PerfilConfig"
+                <ImageButton
+                    android:id="@+id/ivProfile"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginEnd="50dp"
                     android:contentDescription="Descripcion Perfil"
                     android:src="@drawable/perfil"
+                    android:clickable="true"
+                    android:focusable="true">
 
-                    />
+                </ImageButton>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -93,7 +92,7 @@
                         android:text="Nombre_usuario"
                         android:textColor="@android:color/black"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"/>
 
                     <TextView
                         android:id="@+id/tv_email"
@@ -101,7 +100,7 @@
                         android:layout_height="wrap_content"
                         android:text="ejemplo@gmail.com"
                         android:textColor="@android:color/darker_gray"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -110,26 +109,27 @@
                 android:layout_height="wrap_content"
                 android:background="@color/ColorRelleno"
                 android:orientation="vertical"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="5dp">
 
                 <LinearLayout
                     android:id="@+id/DatoCuenta"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:clickable="true"
-                    android:focusable="true"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="8dp">
+                    android:padding="5dp">
 
-                    <ImageView
-                        android:id="@+id/perfil2Config"
+                    <ImageButton
+                        android:id="@+id/ivAccountData"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="4dp"
                         android:contentDescription="@string/descrip_user_icon"
-                        android:src="@drawable/usuario" />
+                        android:src="@drawable/usuario"
+                        >
+
+                    </ImageButton>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -143,8 +143,12 @@
                             android:layout_marginStart="10dp"
                             android:text="Datos de cuenta"
                             android:textColor="@android:color/black"
+<<<<<<< HEAD
                             android:textStyle="bold"
                             android:textSize="16sp" />
+=======
+                            android:textSize="16sp"/>
+>>>>>>> 62f4c71cb1a151cb3e90f5e181d92205149c5411
 
                         <TextView
                             android:id="@+id/tv_descrip_datos_cta"
@@ -153,7 +157,7 @@
                             android:layout_marginStart="10dp"
                             android:text="lorem impsilorem lorem lorem impsilorem lorem"
                             android:textColor="@android:color/black"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -162,20 +166,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:clickable="true"
-                    android:focusable="true"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:padding="1dp">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/ivCards"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="4dp"
+                        android:adjustViewBounds="false"
                         android:contentDescription="@string/descrip_tarjeta_credit"
-                        android:src="@drawable/tarjetas"
-                        android:onClick="true"
-                        tools:ignore="OnClick" />
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/tarjetas">
+
+                    </ImageButton>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -183,23 +189,23 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/tv_cards"
+                            android:id="@+id/tvCards"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
                             android:text="Tarjetas"
                             android:textStyle="bold"
                             android:textColor="@android:color/black"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"/>
 
                         <TextView
                             android:id="@+id/tv_descrip_tarjeta"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
-                            android:text="lorem impsilorem lorem lorem impsilorem lorem"
+                            android:text="@string/lorem_impsilorem_lorem_lorem_impsilorem_lorem"
                             android:textColor="@android:color/black"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -207,19 +213,23 @@
                     android:id="@+id/SeguridadConfig"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:clickable="true"
-                    android:focusable="true"
+                    android:layout_marginTop="15dp"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:padding="8dp">
+                    android:padding="7dp">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/ivSecurity"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="4dp"
-                        android:contentDescription="@string/descrip_seguridad_icon"
-                        android:src="@drawable/seguridad" />
+                        android:contentDescription="@string/descrip_delete_icon"
+                        android:src="@drawable/seguridad"
+                        android:clickable="true"
+                        android:focusable="true"
+                        >
+
+                    </ImageButton>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -227,14 +237,14 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/tv_security"
+                            android:id="@+id/tvSecurity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
                             android:text="Seguridad"
                             android:textStyle="bold"
                             android:textColor="@android:color/black"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"/>
 
                         <TextView
                             android:id="@+id/tv_descrip_seguridad"
@@ -243,7 +253,7 @@
                             android:layout_marginStart="10dp"
                             android:text="lorem impsilorem lorem lorem impsilorem lorem"
                             android:textColor="@android:color/black"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -251,20 +261,24 @@
                     android:id="@+id/DeleteConfig"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="15dp"
                     android:background="@color/ColorRelleno"
-                    android:clickable="true"
-                    android:focusable="true"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:padding="8dp">
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/ivDeleteAccount"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginEnd="4dp"
                         android:contentDescription="@string/descrip_delete_icon"
-                        android:src="@drawable/basura" />
+                        android:src="@drawable/basura"
+                        android:clickable="true"
+                        android:focusable="true"
+                        >
+
+                    </ImageButton>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -279,7 +293,7 @@
                             android:text="Eliminar tu cuenta"
                             android:textStyle="bold"
                             android:textColor="@android:color/black"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"/>
 
                         <TextView
                             android:id="@+id/tv_descrip_elim_cta"
@@ -288,7 +302,7 @@
                             android:layout_marginStart="10dp"
                             android:text="lorem impsilorem lorem lorem impsilorem lorem"
                             android:textColor="@android:color/black"
-                            android:textSize="16sp" />
+                            android:textSize="16sp"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -316,5 +330,4 @@
             android:text="Copyrigth © 2022 | OneClick Pets"
             android:textColor="@color/ColorFondo"/>
     </LinearLayout>
-
 </RelativeLayout>
