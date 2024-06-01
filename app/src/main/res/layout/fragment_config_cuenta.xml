@@ -143,6 +143,7 @@
                             android:layout_marginStart="10dp"
                             android:text="Datos de cuenta"
                             android:textColor="@android:color/black"
+                            android:textStyle="bold"
                             android:textSize="16sp" />
 
                         <TextView
@@ -187,6 +188,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
                             android:text="Tarjetas"
+                            android:textStyle="bold"
                             android:textColor="@android:color/black"
                             android:textSize="16sp" />
 
@@ -230,6 +232,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
                             android:text="Seguridad"
+                            android:textStyle="bold"
                             android:textColor="@android:color/black"
                             android:textSize="16sp" />
 
@@ -274,6 +277,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
                             android:text="Eliminar tu cuenta"
+                            android:textStyle="bold"
                             android:textColor="@android:color/black"
                             android:textSize="16sp" />
 
