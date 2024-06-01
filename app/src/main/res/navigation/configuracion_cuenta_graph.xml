@@ -10,4 +10,9 @@
         android:name="com.aaa.inicio11.ConfigCuentaFragment"
         android:label="fragment_config_cuenta"
         tools:layout="@layout/fragment_config_cuenta" />
+    <fragment
+        android:id="@+id/regVendedorFragment"
+        android:name="com.aaa.inicio11.RegVendedorFragment"
+        android:label="fragment_reg_vendedor"
+        tools:layout="@layout/fragment_reg_vendedor" />
 </navigation>
