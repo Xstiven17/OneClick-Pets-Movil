@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.Theme_Inicio11)
         super.onCreate(savedInstanceState)
+<<<<<<< HEAD
         setContentView(R.layout.fragment_inicio)
 
 
@@ -71,6 +72,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             return true
         }
         return super.onOptionsItemSelected(item)
+=======
+        setContentView(R.layout.fragment_registro_usuario)
+>>>>>>> 0165b8bea16d31af58508df8d598ceba53f2eed6
     }
 }
 
