@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
         setTheme(R.style.Theme_Inicio11)
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_inicio_sesion)
+        setContentView(R.layout.fragment_form_datos_cuenta)
     }
 }
 
