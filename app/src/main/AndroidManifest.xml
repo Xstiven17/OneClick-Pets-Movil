@@ -5,25 +5,25 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/fondo_inicio"
-        android:label="@string/app_name"
+        android:label="OneClick Pets"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Inicio11">
 
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/SplashTheme"/>
-        <activity
-            android:name=".SplashScreen"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+            android:name="com.aaa.inicio11.MainActivity"
+            android:theme="@style/SplashTheme" />
 
+        <activity
+            android:exported="true"
+            android:name="com.aaa.inicio11.SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.aaa.inicio11.MainActivity" />
+
     </application>
 
 </manifest>

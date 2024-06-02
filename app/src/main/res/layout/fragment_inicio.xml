@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -6,7 +5,7 @@
     android:background="@drawable/inico"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".InicioFragment">
 
     <LinearLayout
         android:id="@+id/rectan1"
@@ -20,15 +19,9 @@
             android:id="@+id/btnperfil"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/usu2"
             android:layout_marginStart="350dp"
-            >
-
+            android:src="@drawable/usu2">
         </ImageView>
-
-
-
-
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -36,9 +29,8 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
 
-
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -69,6 +61,4 @@
             android:text="Copyrigth © 2022 | OneClick Pets"
             android:textColor="@android:color/white"/>
     </LinearLayout>
-
-
 </RelativeLayout>
