@@ -6,5 +6,8 @@
     
     <style name="SplashTheme" parent="Theme.Inicio11">
         <item name="android:windowBackground">@mipmap/ic_launcher_background</item>
+
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
     </style>
 </resources>
