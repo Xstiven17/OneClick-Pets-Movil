@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+<<<<<<< HEAD
     <!-- Encabezado -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -184,3 +185,10 @@
 
 </RelativeLayout>
 </RelativeLayout>
+=======
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+</FrameLayout>
+>>>>>>> 603a78d6916e838192ac7f08fa900281d9ca5e46
