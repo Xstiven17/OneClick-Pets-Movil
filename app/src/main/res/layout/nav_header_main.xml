@@ -4,7 +4,7 @@
     android:id="@+id/nav_header"
     android:layout_width="match_parent"
     android:layout_height="160dp"
-    android:background="@color/ColorBoton"
+    android:background="@color/ColorNegro"
     android:clickable="true"
     android:focusable="true"
     android:foreground="?attr/selectableItemBackgroundBorderless"
@@ -26,6 +26,4 @@
         android:paddingTop="16dp"
         android:text="OneClick Pets"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
-
-
 </LinearLayout>

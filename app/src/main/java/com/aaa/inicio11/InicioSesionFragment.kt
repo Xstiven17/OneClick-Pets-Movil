@@ -6,38 +6,44 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.aaa.inicio11.databinding.FragmentInicioSesionBinding
 
 class InicioSesionFragment : Fragment() {
+
+    private var _binding: FragmentInicioSesionBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        _binding = FragmentInicioSesionBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
-        val view = inflater.inflate(R.layout.fragment_inicio_sesion, container, false)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-
-        view.findViewById<View>(R.id.btnatras).setOnClickListener {
-            Toast.makeText(context, "Back button clicked", Toast.LENGTH_SHORT).show()
-
+        binding.btnatras.setOnClickListener {
+            Toast.makeText(requireContext(), "Atras", Toast.LENGTH_SHORT).show()
         }
 
-        view.findViewById<View>(R.id.btnIniciarSesion).setOnClickListener {
-            Toast.makeText(context, "Login button clicked", Toast.LENGTH_SHORT).show()
-
+        binding.btnIniciarSesion.setOnClickListener {
+            Toast.makeText(requireContext(), "Login", Toast.LENGTH_SHORT).show()
         }
 
-        view.findViewById<View>(R.id.btnRegistrarse).setOnClickListener {
-            Toast.makeText(context, "Register button clicked", Toast.LENGTH_SHORT).show()
-
+        binding.btnRegistrarse.setOnClickListener {
+            Toast.makeText(requireContext(), "Registrar", Toast.LENGTH_SHORT).show()
         }
 
-        view.findViewById<View>(R.id.tvRecuperar).setOnClickListener {
-            Toast.makeText(context, "Recover password clicked", Toast.LENGTH_SHORT).show()
-
+        binding.tvRecuperar.setOnClickListener {
+            Toast.makeText(requireContext(), "Contraseña", Toast.LENGTH_SHORT).show()
         }
+    }
 
-        return view
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
 
