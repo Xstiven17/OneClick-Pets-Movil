@@ -1,12 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FormDatosCuentaFragment">
+    android:layout_height="match_parent">
 
+<<<<<<< HEAD
+    <!-- Encabezado -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/black"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp"/>
+
+    <!-- Contenido principal -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/footer"
+        android:padding="16dp"
+        android:background="#fff8dc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:layout_margin="16dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Datos de cuenta"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="24dp"/>
+
+            <EditText
+                android:id="@+id/primerNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Primer nombre *"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/segundoNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Segundo nombre"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/primerApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Primer apellido *"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/segundoApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Segundo apellido *"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo documento *"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/cc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CC"/>
+
+                <RadioButton
+                    android:id="@+id/ti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TI"/>
+
+                <RadioButton
+                    android:id="@+id/ce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CE"/>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/numeroDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de documento *"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de expedición *"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/diaExpedicion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="DD"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/mesExpedicion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="MM"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/anoExpedicion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="AAAA"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dirección *"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/numeroContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número contacto *"
+                android:inputType="phone" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Pie de página -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atras"
+            android:textColor="@android:color/white"
+            android:background="@color/ColorNegro"
+            android:drawableLeft="@android:drawable/ic_media_previous"
+            android:layout_alignParentStart="true"/>
+
+
+</RelativeLayout>
+</RelativeLayout>
+=======
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/hello_blank_fragment" />
 </FrameLayout>
+>>>>>>> 603a78d6916e838192ac7f08fa900281d9ca5e46
