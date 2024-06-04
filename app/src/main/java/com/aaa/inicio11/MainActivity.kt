@@ -7,45 +7,43 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import com.aaa.inicio11.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
-    private lateinit var binding: ActivityMainBinding
     private lateinit var toggle: ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.Theme_Inicio11)
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        setSupportActionBar(binding.appBarMain.toolbarMain)
+        setSupportActionBar(findViewById(R.id.toolbar_main))
 
         toggle = ActionBarDrawerToggle(
             this,
-            binding.drawerLayout,
-            binding.toolbarMain,
+            findViewById(R.id.drawer_layout),
+            findViewById(R.id.toolbar_main),
             R.string.navigation_drawer_open,
             R.string.navigation_drawer_close
         )
-        binding.drawerLayout.addDrawerListener(toggle)
+        findViewById<DrawerLayout>(R.id.drawer_layout).addDrawerListener(toggle)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeButtonEnabled(true)
 
-        binding.navView.setNavigationItemSelectedListener(this)
+        findViewById<NavigationView>(R.id.nav_view).setNavigationItemSelectedListener(this)
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when(item.itemId) {
+        when (item.itemId) {
             R.id.nav_item_one -> Toast.makeText(this, "Item 1", Toast.LENGTH_SHORT).show()
             R.id.nav_item_two -> Toast.makeText(this, "Item 2", Toast.LENGTH_SHORT).show()
             R.id.nav_item_three -> Toast.makeText(this, "Item 3", Toast.LENGTH_SHORT).show()
         }
-        binding.drawerLayout.closeDrawer(GravityCompat.START)
+        findViewById<DrawerLayout>(R.id.drawer_layout).closeDrawer(GravityCompat.START)
         return true
     }
 
