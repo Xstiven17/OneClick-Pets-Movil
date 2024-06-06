@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.aaa.inicio11.databinding.FragmentInicioSesionBinding
 
 class InicioSesionFragment : Fragment() {
@@ -26,6 +27,7 @@ class InicioSesionFragment : Fragment() {
 
         binding.btnatras.setOnClickListener {
             Toast.makeText(requireContext(), "Atras", Toast.LENGTH_SHORT).show()
+            parentFragmentManager.popBackStack()
         }
 
         binding.btnIniciarSesion.setOnClickListener {
@@ -34,6 +36,7 @@ class InicioSesionFragment : Fragment() {
 
         binding.btnRegistrarse.setOnClickListener {
             Toast.makeText(requireContext(), "Registrar", Toast.LENGTH_SHORT).show()
+            navigateToRegistroFragment()
         }
 
         binding.tvRecuperar.setOnClickListener {
@@ -41,10 +44,18 @@ class InicioSesionFragment : Fragment() {
         }
     }
 
+    private fun navigateToRegistroFragment() {
+        val transaction: FragmentTransaction = parentFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragment_container, RegistroUsuarioFragment())
+        transaction.addToBackStack(null) // Add this transaction to the back stack
+        transaction.commit()
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 }
+
 
 
