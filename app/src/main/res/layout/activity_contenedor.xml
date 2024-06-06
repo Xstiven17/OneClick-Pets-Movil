@@ -17,9 +17,7 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintBottom_toBottomOf="parent"
       app:defaultNavHost="true"
-      app:NavGraph = "@navigation/configuracion_cuenta_graph.xml"
-      >
+      app:navGraph="@navigation/configuracion_cuenta_graph" />
 
-  </androidx.fragment.app.FragmentContainerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

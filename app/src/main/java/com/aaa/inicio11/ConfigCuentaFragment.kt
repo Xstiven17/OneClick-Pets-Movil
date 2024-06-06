@@ -37,7 +37,7 @@ class ConfigCuentaFragment : Fragment() {
         // Configuración del click listener para el ImageButton ivSecurity
         binding.ivSecurity.setOnClickListener {
             Toast.makeText(activity, "Seguridad clickeado", Toast.LENGTH_SHORT).show()
-            findNavController().navigate(R.id.action_configCuentaFragment_to_formDatosCuentaFragment2)
+           // findNavController().navigate(R.id.action_configCuentaFragment_to_DatoCuenta)
         }
 
         // Configuración del click listener para el ImageButton ivCards
@@ -61,7 +61,14 @@ class ConfigCuentaFragment : Fragment() {
         }
 
 
+
+
 }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }
 
 

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.aaa.inicio11">
 
     <application
@@ -9,22 +10,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Inicio11">
+
         <activity
-            android:name=".Contenedor"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name="com.aaa.inicio11.MainActivity"
             android:theme="@style/SplashTheme" />
+
         <activity
-            android:name=".SplashScreen"
             android:exported="true"
+            android:name="com.aaa.inicio11.SplashScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Add the LoginActivity declaration here -->
+        <activity
+            android:name="com.aaa.inicio11.InicioSesionFragment"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            tools:ignore="Instantiatable" />
+
     </application>
 
 </manifest>

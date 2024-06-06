@@ -1,12 +1,13 @@
 package com.aaa.inicio11
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.fragment.findNavController
 import com.aaa.inicio11.databinding.FragmentInicioBinding
 
 class InicioFragment : Fragment() {
@@ -19,7 +20,6 @@ class InicioFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentInicioBinding.inflate(inflater, container, false)
-        Log.d("InicioFragment", "onCreateView()")
         return binding.root
     }
 
@@ -31,13 +31,24 @@ class InicioFragment : Fragment() {
         }
 
         binding.btnperfil.setOnClickListener {
-            Toast.makeText(requireContext(), "Perfil", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "InicioUsuario", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_inicioFragment_to_inicioSesionFragment)
+        }
+
+        binding.btnatras.setOnClickListener{
+
         }
     }
+
+   /* private fun navigateToInicioSesionFragment() {
+        val transaction: FragmentTransaction = parentFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragment_container, InicioSesionFragment())
+        transaction.addToBackStack(null) // Add this transaction to the back stack
+        transaction.commit()
+    } */
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
+        }
 }
-

@@ -9,21 +9,38 @@
         android:id="@+id/configCuentaFragment"
         android:name="com.aaa.inicio11.ConfigCuentaFragment"
         android:label="fragment_config_cuenta"
-        tools:layout="@layout/fragment_config_cuenta" >
-        <action
-            android:id="@+id/action_configCuentaFragment_to_formDatosCuentaFragment2"
-            app:destination="@id/formDatosCuentaFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_config_cuenta" />
     <fragment
         android:id="@+id/regVendedorFragment"
         android:name="com.aaa.inicio11.RegVendedorFragment"
         android:label="fragment_reg_vendedor"
         tools:layout="@layout/fragment_reg_vendedor" />
     <fragment
+        android:id="@+id/inicioSesionFragment"
+        android:name="com.aaa.inicio11.InicioSesionFragment"
+        android:label="fragment_inicio_sesion"
+        tools:layout="@layout/fragment_inicio_sesion" >
+        <action
+            android:id="@+id/action_inicioSesionFragment_to_registroUsuarioFragment"
+            app:destination="@id/registroUsuarioFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.aaa.inicio11.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+
+
+
+    <fragment
         android:id="@+id/inicioFragment"
         android:name="com.aaa.inicio11.InicioFragment"
         android:label="fragment_inicio"
-        tools:layout="@layout/fragment_inicio" />
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_inicioSesionFragment"
+            app:destination="@id/inicioSesionFragment" />
+    </fragment>
     <fragment
         android:id="@+id/verificacionCuentaFragment"
         android:name="com.aaa.inicio11.VerificacionCuentaFragment"
@@ -40,7 +57,11 @@
         android:label="fragment_registro_usuario"
         tools:layout="@layout/fragment_registro_usuario" />
     <fragment
-        android:id="@+id/DatoCuenta"
+        android:id="@+id/datosCuentaFragment"
         android:name="com.aaa.inicio11.DatosCuentaFragment"
         android:label="DatosCuentaFragment" />
+
+
+
+
 </navigation>
