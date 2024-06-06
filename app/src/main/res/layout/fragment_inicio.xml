@@ -15,11 +15,20 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <ImageView
+    <ImageView
+        android:id="@+id/btnatras"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/menu" />
+
+    <ImageView
             android:id="@+id/btnperfil"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginStart="350dp"
+            android:layout_marginStart="250dp"
+        android:layout_marginTop="5dp"
             android:src="@drawable/usu2">
         </ImageView>
     </LinearLayout>
@@ -38,7 +47,7 @@
         android:layout_marginBottom="100dp"
         android:text="Comprar Ahora"
         android:textColor="@color/ColorNegro"
-        android:background="@color/ColorBoton"/>
+        android:backgroundTint="@color/ColorBoton"/>
 
     <LinearLayout
         android:id="@+id/rectan2"

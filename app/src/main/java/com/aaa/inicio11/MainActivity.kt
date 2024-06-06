@@ -3,6 +3,7 @@ package com.aaa.inicio11
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
@@ -20,6 +21,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(R.layout.activity_main)
 
         setSupportActionBar(findViewById(R.id.toolbar_main))
+
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, InicioFragment())
+                .commit()
+        }
 
         toggle = ActionBarDrawerToggle(
             this,
@@ -43,11 +50,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
+
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         val fragment: Fragment = when (item.itemId) {
             R.id.nav_item_one -> InicioFragment()
-          //  R.id.nav_item_two -> CatalogFragment()
-            // Add more cases for other fragments
+            R.id.nav_item_two -> CatalogoFragment()
+           // R.id.nav_item_three -> CategoriaFragment()
+            R.id.nav_item_four -> CarritoComprasFragment()
+           // R.id.nav_item_five -> NotificationesFragment()
+           // R.id.nav_item_six -> AyudapqrFragment()
+            R.id.nav_item_seven -> ConfigCuentaFragment()
             else -> InicioFragment()
         }
 

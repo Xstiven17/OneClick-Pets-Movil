@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Comprar"
-            android:background="@color/ColorBoton"
+            android:backgroundTint="@color/ColorBoton"
             android:textColor="@color/ColorNegro"
             android:textSize="25dp"
             android:onClick="comprar"
