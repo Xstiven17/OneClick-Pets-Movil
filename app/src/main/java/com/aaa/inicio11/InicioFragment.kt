@@ -1,6 +1,7 @@
 package com.aaa.inicio11
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,8 +18,8 @@ class InicioFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         _binding = FragmentInicioBinding.inflate(inflater, container, false)
+        Log.d("InicioFragment", "onCreateView()")
         return binding.root
     }
 
@@ -26,8 +27,7 @@ class InicioFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.button1.setOnClickListener {
-            Toast.makeText(requireContext(), "Comprar Ahora", Toast.LENGTH_SHORT)
-                .show()
+            Toast.makeText(requireContext(), "Comprar Ahora", Toast.LENGTH_SHORT).show()
         }
 
         binding.btnperfil.setOnClickListener {
@@ -40,3 +40,4 @@ class InicioFragment : Fragment() {
         _binding = null
     }
 }
+

@@ -2,6 +2,7 @@ package com.aaa.inicio11
 
 import android.content.res.Configuration
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +20,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        Log.d("MainActivity", "onCreate()")
+
+        setSupportActionBar(findViewById(R.id.toolbar_main))
+
         setSupportActionBar(findViewById(R.id.toolbar_main))
 
         toggle = ActionBarDrawerToggle(
@@ -35,7 +40,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         findViewById<NavigationView>(R.id.nav_view).setNavigationItemSelectedListener(this)
 
-        // Load the default fragment
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, InicioFragment())
@@ -46,12 +50,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         val fragment: Fragment = when (item.itemId) {
             R.id.nav_item_one -> InicioFragment()
-          //  R.id.nav_item_two -> CatalogFragment()
-            // Add more cases for other fragments
+          //  R.id.nav_item_two -> CatalogoFragment()
             else -> InicioFragment()
         }
 
-        // Replace the fragment
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)
             .commit()
