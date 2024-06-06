@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import com.aaa.inicio11.databinding.FragmentConfigCuentaBinding
 
 
@@ -36,6 +37,7 @@ class ConfigCuentaFragment : Fragment() {
         // Configuración del click listener para el ImageButton ivSecurity
         binding.ivSecurity.setOnClickListener {
             Toast.makeText(activity, "Seguridad clickeado", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_configCuentaFragment_to_formDatosCuentaFragment2)
         }
 
         // Configuración del click listener para el ImageButton ivCards

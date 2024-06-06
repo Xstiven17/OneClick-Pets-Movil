@@ -8,21 +8,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Inicio11">
-
         <activity
-            android:name="com.aaa.inicio11.MainActivity"
+            android:name=".Contenedor"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/SplashTheme" />
-
         <activity
+            android:name=".SplashScreen"
             android:exported="true"
-            android:name="com.aaa.inicio11.SplashScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
