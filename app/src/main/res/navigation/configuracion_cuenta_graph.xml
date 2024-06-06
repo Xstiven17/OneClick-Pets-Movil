@@ -20,30 +20,27 @@
         android:label="fragment_reg_vendedor"
         tools:layout="@layout/fragment_reg_vendedor" />
     <fragment
-        android:id="@+id/inicioSesionFragment"
-        android:name="com.aaa.inicio11.InicioSesionFragment"
-        android:label="fragment_inicio_sesion"
-        tools:layout="@layout/fragment_inicio_sesion" >
-        <action
-            android:id="@+id/action_inicioSesionFragment_to_registroUsuarioFragment"
-            app:destination="@id/registroUsuarioFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/inicioFragment"
         android:name="com.aaa.inicio11.InicioFragment"
         android:label="fragment_inicio"
-        tools:layout="@layout/fragment_inicio" >
-        <action
-            android:id="@+id/action_inicioFragment_to_inicioSesionFragment"
-            app:destination="@id/inicioSesionFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/verificacionCuentaFragment"
+        android:name="com.aaa.inicio11.VerificacionCuentaFragment"
+        android:label="fragment_verificacion_cuenta"
+        tools:layout="@layout/fragment_verificacion_cuenta" />
+    <fragment
+        android:id="@+id/carritoComprasFragment"
+        android:name="com.aaa.inicio11.CarritoComprasFragment"
+        android:label="fragment_carrito_compras"
+        tools:layout="@layout/fragment_carrito_compras" />
     <fragment
         android:id="@+id/registroUsuarioFragment"
         android:name="com.aaa.inicio11.RegistroUsuarioFragment"
         android:label="fragment_registro_usuario"
         tools:layout="@layout/fragment_registro_usuario" />
     <fragment
-        android:id="@+id/formDatosCuentaFragment"
-        android:name="com.aaa.inicio11.FormDatosCuentaFragment"
-        android:label="FormDatosCuentaFragment" />
+        android:id="@+id/DatoCuenta"
+        android:name="com.aaa.inicio11.DatosCuentaFragment"
+        android:label="DatosCuentaFragment" />
 </navigation>

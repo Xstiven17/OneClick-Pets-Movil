@@ -6,8 +6,13 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo_inicio"
     android:id="@+id/drawer_layout"
-    tools:context=".MainActivity"
+    tools:context="MainActivity"
     tools:openDrawer="start">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <include
         layout="@layout/app_bar_main"
