@@ -3,11 +3,11 @@ package com.aaa.inicio11
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -34,18 +34,27 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         supportActionBar?.setHomeButtonEnabled(true)
 
         findViewById<NavigationView>(R.id.nav_view).setNavigationItemSelectedListener(this)
+
+        // Load the default fragment
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, InicioFragment())
+                .commit()
+        }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.nav_item_one -> Toast.makeText(this, "Inicio", Toast.LENGTH_SHORT).show()
-            R.id.nav_item_two -> Toast.makeText(this, "Catalogo", Toast.LENGTH_SHORT).show()
-            R.id.nav_item_three -> Toast.makeText(this, "Categoria Mascotas", Toast.LENGTH_SHORT).show()
-            R.id.nav_item_four -> Toast.makeText(this, "Carrito Compras", Toast.LENGTH_SHORT).show()
-            R.id.nav_item_five -> Toast.makeText(this, "Notificaciones", Toast.LENGTH_SHORT).show()
-            R.id.nav_item_six -> Toast.makeText(this, "Ayuda Pqr", Toast.LENGTH_SHORT).show()
-            R.id.nav_item_seven -> Toast.makeText(this, "Configuracion Cuenta", Toast.LENGTH_SHORT).show()
+        val fragment: Fragment = when (item.itemId) {
+            R.id.nav_item_one -> InicioFragment()
+          //  R.id.nav_item_two -> CatalogFragment()
+            // Add more cases for other fragments
+            else -> InicioFragment()
         }
+
+        // Replace the fragment
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .commit()
 
         findViewById<DrawerLayout>(R.id.drawer_layout).closeDrawer(GravityCompat.START)
         return true
@@ -68,6 +77,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         return super.onOptionsItemSelected(item)
     }
 }
+
 
 
 
