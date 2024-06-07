@@ -25,19 +25,12 @@ class RegistroUsuarioFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnatras.setOnClickListener {
-            activity?.onBackPressed()
+            Toast.makeText(requireContext(), "Atras", Toast.LENGTH_SHORT).show()
+            parentFragmentManager.popBackStack()
         }
 
         binding.boton1.setOnClickListener {
-            Toast.makeText(activity, "Registro completo", Toast.LENGTH_SHORT).show()
-        }
-
-        binding.btnfacebook.setOnClickListener {
-            Toast.makeText(activity, "Iniciar sesión con Facebook", Toast.LENGTH_SHORT).show()
-        }
-
-        binding.btngmail.setOnClickListener {
-            Toast.makeText(activity, "Iniciar sesión con Gmail", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Registrar", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -46,4 +39,3 @@ class RegistroUsuarioFragment : Fragment() {
         _binding = null
     }
 }
-

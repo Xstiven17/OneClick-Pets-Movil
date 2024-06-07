@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/configuracion_cuenta_graph"
-    app:startDestination="@id/configCuentaFragment">
+    app:startDestination="@id/inicioFragment">
 
     <fragment
         android:id="@+id/configCuentaFragment"
@@ -19,17 +19,28 @@
         android:id="@+id/inicioSesionFragment"
         android:name="com.aaa.inicio11.InicioSesionFragment"
         android:label="fragment_inicio_sesion"
-        tools:layout="@layout/fragment_inicio_sesion" />
+        tools:layout="@layout/fragment_inicio_sesion" >
+        <action
+            android:id="@+id/action_inicioSesionFragment_to_registroUsuarioFragment"
+            app:destination="@id/registroUsuarioFragment" />
+    </fragment>
     <activity
         android:id="@+id/mainActivity"
         android:name="com.aaa.inicio11.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
+
+
+
     <fragment
         android:id="@+id/inicioFragment"
         android:name="com.aaa.inicio11.InicioFragment"
         android:label="fragment_inicio"
-        tools:layout="@layout/fragment_inicio" />
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_inicioSesionFragment"
+            app:destination="@id/inicioSesionFragment" />
+    </fragment>
     <fragment
         android:id="@+id/verificacionCuentaFragment"
         android:name="com.aaa.inicio11.VerificacionCuentaFragment"
@@ -49,4 +60,8 @@
         android:id="@+id/datosCuentaFragment"
         android:name="com.aaa.inicio11.DatosCuentaFragment"
         android:label="DatosCuentaFragment" />
+
+
+
+
 </navigation>
