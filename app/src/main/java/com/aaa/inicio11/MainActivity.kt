@@ -1,6 +1,5 @@
 package com.aaa.inicio11
 
-
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.MenuItem
@@ -72,7 +71,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_item_seven -> {
                 Toast.makeText(this, "Configuración Cuenta", Toast.LENGTH_SHORT).show()
-                // loadFragment(ConfiguracionCuentaFragment()) // Reemplazar con el fragmento real
+                loadFragment(ConfigCuentaFragment())
             }
         }
 
