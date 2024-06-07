@@ -18,6 +18,7 @@ class VerificacionCuentaFragment : Fragment() {
     private lateinit var digit2: EditText
     private lateinit var digit3: EditText
     private lateinit var digit4: EditText
+    private lateinit var btnatrasverific: Button
     private lateinit var btnReenviar: Button
 
     @SuppressLint("MissingInflatedId")
@@ -32,6 +33,7 @@ class VerificacionCuentaFragment : Fragment() {
         digit2 = view.findViewById(R.id.edit2_2)
         digit3 = view.findViewById(R.id.edit3_3)
         digit4 = view.findViewById(R.id.edit4_4)
+        btnatrasverific = view.findViewById(R.id.inicioSesionFragment)
         btnReenviar = view.findViewById(R.id.btn_reenviar)
 
         val textWatcher = VerificationTextWatcher()
