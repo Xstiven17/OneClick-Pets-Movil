@@ -20,4 +20,33 @@
         android:name="com.aaa.inicio11.InicioSesionFragment"
         android:label="fragment_inicio_sesion"
         tools:layout="@layout/fragment_inicio_sesion" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.aaa.inicio11.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.aaa.inicio11.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/verificacionCuentaFragment"
+        android:name="com.aaa.inicio11.VerificacionCuentaFragment"
+        android:label="fragment_verificacion_cuenta"
+        tools:layout="@layout/fragment_verificacion_cuenta" />
+    <fragment
+        android:id="@+id/carritoComprasFragment"
+        android:name="com.aaa.inicio11.CarritoComprasFragment"
+        android:label="fragment_carrito_compras"
+        tools:layout="@layout/fragment_carrito_compras" />
+    <fragment
+        android:id="@+id/registroUsuarioFragment"
+        android:name="com.aaa.inicio11.RegistroUsuarioFragment"
+        android:label="fragment_registro_usuario"
+        tools:layout="@layout/fragment_registro_usuario" />
+    <fragment
+        android:id="@+id/datosCuentaFragment"
+        android:name="com.aaa.inicio11.DatosCuentaFragment"
+        android:label="DatosCuentaFragment" />
 </navigation>

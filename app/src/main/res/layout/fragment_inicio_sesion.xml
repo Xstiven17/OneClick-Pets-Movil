@@ -101,7 +101,7 @@
             android:layout_height="wrap_content"
             android:text="Iniciar Sesion"
             android:layout_marginTop="16dp"
-            android:background="@color/ColorBoton"
+            android:backgroundTint="@color/ColorBoton"
             android:textColor="@color/ColorNegro" />
 
         <Button
@@ -110,7 +110,7 @@
             android:layout_height="wrap_content"
             android:text="Registrarse"
             android:layout_marginTop="8dp"
-            android:background="@color/ColorBoton"
+            android:backgroundTint="@color/ColorBoton"
             android:textColor="@color/ColorNegro" />
     </LinearLayout>
 

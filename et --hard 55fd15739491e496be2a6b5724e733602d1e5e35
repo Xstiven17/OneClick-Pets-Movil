@@ -1,0 +1,277 @@
+[33mcommit 6ff1f24c62631dfc62246ba46455b508a83c7bc6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: jasvix12 <jasvialvarez@gmail.com>
+Date:   Thu Jun 6 01:17:20 2024 -0500
+
+    inicioRegistroExitoso
+
+[33mcommit 55fd15739491e496be2a6b5724e733602d1e5e35[m
+Author: jasvix12 <jasvialvarez@gmail.com>
+Date:   Thu Jun 6 00:24:23 2024 -0500
+
+    navegation
+
+[33mcommit e9d17ddc6554394e1c9eb6a49320451e9a8f3518[m
+Author: jasvix12 <jasvialvarez@gmail.com>
+Date:   Wed Jun 5 19:13:19 2024 -0500
+
+    menu inicio
+
+[33mcommit 47ebaf820c2e89e7b7aca4c50e86e8f4a06322fa[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Wed Jun 5 18:20:41 2024 -0500
+
+    SIIIIIU
+
+[33mcommit 3baf9e3d15bdf3c7bce248bc2fe4cac3a7769bab[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Wed Jun 5 17:07:14 2024 -0500
+
+    Arreglo Menu
+
+[33mcommit 79ad23fd79621d62326c3c6db9c280a412b6319e[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Wed Jun 5 15:05:05 2024 -0500
+
+    Menu
+
+[33mcommit c7809ddd24c547667918148924cdc76d14052b0d[m
+Author: Johansant22 <johansan799@gmail.com>
+Date:   Tue Jun 4 12:01:45 2024 -0500
+
+    menu corregido
+
+[33mcommit e38ae71e7c3c9a7fc3d9b7a3f34e362371949a5e[m
+Merge: 5859188 21e23c0
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Mon Jun 3 13:49:43 2024 -0500
+
+    2 ERRORES
+
+[33mcommit 58591881b75670af1a8085d68db4801c577f6397[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Mon Jun 3 13:47:23 2024 -0500
+
+    2 Errores
+
+[33mcommit 21e23c0d00a6a5840c7172c90b837b7b40bf82d9[m
+Merge: cb213cb 603a78d
+Author: julian707-alexis <alexiscapote2@gmail.com>
+Date:   Sun Jun 2 17:05:37 2024 -0500
+
+    local
+
+[33mcommit cb213cb47ae60d93484d0558302f27a7d1eaa762[m
+Author: julian707-alexis <alexiscapote2@gmail.com>
+Date:   Sun Jun 2 17:04:14 2024 -0500
+
+    local
+
+[33mcommit 603a78d6916e838192ac7f08fa900281d9ca5e46[m
+Merge: 4b944ef 0165b8b
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Sun Jun 2 16:48:04 2024 -0500
+
+    Error 404
+
+[33mcommit 4b944ef3e1363689074d54148addeba31b9da5d8[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Sun Jun 2 16:47:23 2024 -0500
+
+    Error 404
+
+[33mcommit 0165b8bea16d31af58508df8d598ceba53f2eed6[m
+Author: jasvix12 <jasvialvarez@gmail.com>
+Date:   Sun Jun 2 16:42:42 2024 -0500
+
+    botones registro
+
+[33mcommit c0c567d827201ad461bf7480f9281a384afeddbd[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Sat Jun 1 13:35:13 2024 -0500
+
+    Arreglo-ConfigCuenta
+
+[33mcommit add547873ae2e4989e2729a117cab9a13fe6a8e9[m
+Merge: 3aec5a9 62f4c71
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Sat Jun 1 13:31:10 2024 -0500
+
+    ArregloJh
+
+[33mcommit 3aec5a9825c5729fbb18e8a2b0327268f837543f[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Sat Jun 1 13:19:37 2024 -0500
+
+    bolalo
+
+[33mcommit 62f4c71cb1a151cb3e90f5e181d92205149c5411[m
+Author: Johansant22 <johansan799@gmail.com>
+Date:   Sat Jun 1 11:52:47 2024 -0500
+
+    navegacion
+
+[33mcommit f538205bba81bf55379fe08e426e817efee95426[m
+Merge: ef2bca2 67ee1b1
+Author: Johansant22 <johansan799@gmail.com>
+Date:   Wed May 29 13:40:18 2024 -0500
+
+    se resolvieron conflictos con git
+
+[33mcommit ef2bca25a48cbcb7d5e3ddd73353a3b3c6b20cdd[m
+Author: Johansant22 <johansan799@gmail.com>
+Date:   Wed May 29 12:51:12 2024 -0500
+
+    implementar navegation
+
+[33mcommit 67ee1b1a6892ea652f6a52d00a8ccfa8def124a6[m
+Merge: 5d57592 4560327
+Author: jasvix12 <jasvialvarez@gmail.com>
+Date:   Wed May 29 11:54:07 2024 -0500
+
+    botones
+
+[33mcommit 5d57592a18fd4a5a940cfbb878a7a24024072b35[m
+Author: jasvix12 <jasvialvarez@gmail.com>
+Date:   Wed May 29 11:53:00 2024 -0500
+
+    botones
+
+[33mcommit 456032729d1b665df0eae0b6b2e63a1ee4856bd0[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Wed May 29 11:52:41 2024 -0500
+
+    Recuperacion
+
+[33mcommit f18b44d82db5be86476ceaeaea18ddcc7178b3ab[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Wed May 29 08:19:22 2024 -0500
+
+    Actualizacion
+
+[33mcommit 43238638824b8fd1f90f90e90997468751e6f48f[m
+Merge: cac6e75 89ab7a0
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Tue May 28 19:36:37 2024 -0500
+
+    ZZZ
+
+[33mcommit cac6e75dd7cdbd0d2f0650bd473b292b6ed0752d[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Tue May 28 19:35:42 2024 -0500
+
+    ZZZ
+
+[33mcommit 89ab7a0caf1dd811575df8b7f00bf71ca576d429[m
+Author: jasvix12 <jasvialvarez@gmail.com>
+Date:   Tue May 28 16:27:38 2024 -0500
+
+    inicioSesion
+
+[33mcommit fe057a05735cfb45e8958c59825ba78b9d852c67[m
+Merge: dcbe0a2 feae64c
+Author: Kevin_Vivas93 <dayronhernandezparedes@gmail.com>
+Date:   Tue May 28 12:12:32 2024 -0500
+
+    Merge branch 'main' of https://github.com/Xstiven17/OneClick-Pets-Movil
+
+[33mcommit dcbe0a26cb49d15aa11379481d6d938be8627cb1[m
+Author: Kevin_Vivas93 <dayronhernandezparedes@gmail.com>
+Date:   Tue May 28 12:11:43 2024 -0500
+
+    avance botones clickeables
+
+[33mcommit feae64ced6a516d6d468d0c85c343f75fd0d3e52[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Tue May 28 11:54:37 2024 -0500
+
+    Cambios
+
+[33mcommit 8cd694d513b5e91c600dff88828ed10990e0e815[m
+Author: jasvix12 <jasvialvarez@gmail.com>
+Date:   Tue May 28 11:53:59 2024 -0500
+
+    sesion
+
+[33mcommit c8c675e714d3fdf9e20ee1a9c9919ab08d01a3d0[m
+Author: jasvix12 <jasvialvarez@gmail.com>
+Date:   Tue May 28 10:21:31 2024 -0500
+
+    richard
+
+[33mcommit cbdfc60641e25cd491dad7960441e450f599b280[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Tue May 28 08:20:13 2024 -0500
+
+    Cambios
+
+[33mcommit 6d61f2eb32da2900f0818d63361385030f0d0d12[m
+Author: Johansant22 <johansan799@gmail.com>
+Date:   Tue May 28 00:10:40 2024 -0500
+
+    Vista Config_cuenta
+
+[33mcommit 081ad8331d7d60cd171348944d9026d0dce54b7c[m
+Author: jasvix12 <jasvialvarez@gmail.com>
+Date:   Thu May 23 11:30:18 2024 -0500
+
+    registroUsu
+
+[33mcommit 3e6afe5e5bd42d8ec368fce03bcd80c6f73a1cd2[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Wed May 22 11:35:34 2024 -0500
+
+    CarritoCompra
+
+[33mcommit ddd039c2c216438cb3207b5508a4e9d8119f37ed[m
+Author: jasvix12 <jasvialvarez@gmail.com>
+Date:   Wed May 22 10:43:39 2024 -0500
+
+    jasvi
+
+[33mcommit 40d6f0fc6c3dba0256eb285d15624919401bf42b[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Tue May 21 12:07:37 2024 -0500
+
+    Avance de config_cuenta
+
+[33mcommit e7db50b834bba6a885350a63204bfc55d7b1c071[m
+Author: Noa314 <franciscoj_castrom@soy.sena.edu.co>
+Date:   Wed May 15 12:02:33 2024 -0500
+
+    Configuracion_cuenta
+
+[33mcommit 3af0d3677230c6b38fb6c84580c884cd10c567f1[m
+Author: johann <andrestrejos912@gmail.com>
+Date:   Wed May 15 10:15:20 2024 -0500
+
+    Reg
+
+[33mcommit 1f7f9e5da37e4124eeae7ea4e1ea299e31b39e0d[m
+Author: johann <andrestrejos912@gmail.com>
+Date:   Tue May 14 12:20:05 2024 -0500
+
+    Vendedor
+
+[33mcommit e0d98a35f606a914a103440bf5c3566cdbd16840[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Sat May 11 17:03:08 2024 -0500
+
+    fragment-regvendedor
+
+[33mcommit f6469dc9361d33732c64113a066c58fc1ff6f8f0[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Tue May 7 15:45:22 2024 -0500
+
+    ColorLogo
+
+[33mcommit 022f629e2881f93b756ef763391aa4038c076c83[m
+Author: johann <andrestrejos912@gmail.com>
+Date:   Tue May 7 12:02:44 2024 -0500
+
+    Ajuste
+
+[33mcommit d2848e14709724d3bec436889871bbc9dab0da0d[m
+Author: Xstiven17 <mzstiven17@gmail.com>
+Date:   Fri May 3 18:25:29 2024 -0500
+
+    first commit

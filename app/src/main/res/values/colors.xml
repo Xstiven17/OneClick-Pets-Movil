@@ -2,8 +2,8 @@
 <resources>
     <color name="ColorNegro">#FF000000</color>
     <color name="ColorFondo">#FFFFFFFF</color>
-   <color name="ColorBoton">#FCA311</color>
     <color name="ColorIconos">#FED188</color>
     <color name="ColorRelleno">#FFFAF1</color>
     <color name="ColorAzulLink">#3366BB</color>
+    <color name="ColorBoton">#FCA311</color>
 </resources>

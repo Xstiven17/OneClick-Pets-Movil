@@ -28,7 +28,8 @@
         <!-- Add the LoginActivity declaration here -->
         <activity
             android:name="com.aaa.inicio11.InicioSesionFragment"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            tools:ignore="Instantiatable" />
 
     </application>
 

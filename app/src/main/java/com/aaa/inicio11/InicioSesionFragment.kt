@@ -41,13 +41,21 @@ class InicioSesionFragment : Fragment() {
 
         binding.tvRecuperar.setOnClickListener {
             Toast.makeText(requireContext(), "Contraseña", Toast.LENGTH_SHORT).show()
+            navigateToVerificacionCuentaFragment()
         }
     }
 
     private fun navigateToRegistroFragment() {
         val transaction: FragmentTransaction = parentFragmentManager.beginTransaction()
         transaction.replace(R.id.fragment_container, RegistroUsuarioFragment())
-        transaction.addToBackStack(null) // Add this transaction to the back stack
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
+    private fun navigateToVerificacionCuentaFragment() {
+        val transaction: FragmentTransaction = parentFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragment_container, VerificacionCuentaFragment())
+        transaction.addToBackStack(null)
         transaction.commit()
     }
 
@@ -56,6 +64,7 @@ class InicioSesionFragment : Fragment() {
         _binding = null
     }
 }
+
 
 
 

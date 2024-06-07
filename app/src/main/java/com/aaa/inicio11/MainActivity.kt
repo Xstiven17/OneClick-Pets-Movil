@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -21,12 +22,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(R.layout.activity_main)
 
         setSupportActionBar(findViewById(R.id.toolbar_main))
-
-        if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, InicioFragment())
-                .commit()
-        }
 
         toggle = ActionBarDrawerToggle(
             this,
@@ -42,34 +37,53 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         findViewById<NavigationView>(R.id.nav_view).setNavigationItemSelectedListener(this)
 
-        // Load the default fragment
+        // Cargar InicioFragment de forma predeterminada
         if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, InicioFragment())
-                .commit()
+            loadFragment(InicioFragment())
         }
     }
 
-
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        val fragment: Fragment = when (item.itemId) {
-            R.id.nav_item_one -> InicioFragment()
-            R.id.nav_item_two -> CatalogoFragment()
-           // R.id.nav_item_three -> CategoriaFragment()
-            R.id.nav_item_four -> CarritoComprasFragment()
-           // R.id.nav_item_five -> NotificationesFragment()
-           // R.id.nav_item_six -> AyudapqrFragment()
-            R.id.nav_item_seven -> ConfigCuentaFragment()
-            else -> InicioFragment()
+        when (item.itemId) {
+            R.id.nav_item_one -> {
+                Toast.makeText(this, "Inicio", Toast.LENGTH_SHORT).show()
+                loadFragment(InicioFragment())
+            }
+            R.id.nav_item_two -> {
+                Toast.makeText(this, "Catálogo", Toast.LENGTH_SHORT).show()
+                // loadFragment(CatalogoFragment()) // Reemplazar con el fragmento real
+            }
+            R.id.nav_item_three -> {
+                Toast.makeText(this, "Categoría Mascotas", Toast.LENGTH_SHORT).show()
+                // loadFragment(CategoriaMascotasFragment()) // Reemplazar con el fragmento real
+            }
+            R.id.nav_item_four -> {
+                Toast.makeText(this, "Carrito Compras", Toast.LENGTH_SHORT).show()
+                // loadFragment(CarritoComprasFragment()) // Reemplazar con el fragmento real
+            }
+            R.id.nav_item_five -> {
+                Toast.makeText(this, "Notificaciones", Toast.LENGTH_SHORT).show()
+                // loadFragment(NotificacionesFragment()) // Reemplazar con el fragmento real
+            }
+            R.id.nav_item_six -> {
+                Toast.makeText(this, "Ayuda PQR", Toast.LENGTH_SHORT).show()
+                // loadFragment(AyudaPqrFragment()) // Reemplazar con el fragmento real
+            }
+            R.id.nav_item_seven -> {
+                Toast.makeText(this, "Configuración Cuenta", Toast.LENGTH_SHORT).show()
+                // loadFragment(ConfiguracionCuentaFragment()) // Reemplazar con el fragmento real
+            }
         }
-
-        // Replace the fragment
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, fragment)
-            .commit()
 
         findViewById<DrawerLayout>(R.id.drawer_layout).closeDrawer(GravityCompat.START)
         return true
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+        val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragment_container, fragment)
+        transaction.addToBackStack(null) // Añadir esta transacción a la pila
+        transaction.commit()
     }
 
     override fun onPostCreate(savedInstanceState: Bundle?) {
@@ -89,6 +103,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         return super.onOptionsItemSelected(item)
     }
 }
+
+
 
 
 
