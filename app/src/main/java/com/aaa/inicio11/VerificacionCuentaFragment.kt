@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 
 class VerificacionCuentaFragment : Fragment() {
@@ -18,7 +19,7 @@ class VerificacionCuentaFragment : Fragment() {
     private lateinit var digit2: EditText
     private lateinit var digit3: EditText
     private lateinit var digit4: EditText
-    private lateinit var btnatrasverific: Button
+    private lateinit var btnatrasverific: ImageView
     private lateinit var btnReenviar: Button
 
     @SuppressLint("MissingInflatedId")
@@ -26,14 +27,13 @@ class VerificacionCuentaFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         val view = inflater.inflate(R.layout.fragment_verificacion_cuenta, container, false)
 
         digit1 = view.findViewById(R.id.edit1_1)
         digit2 = view.findViewById(R.id.edit2_2)
         digit3 = view.findViewById(R.id.edit3_3)
         digit4 = view.findViewById(R.id.edit4_4)
-        btnatrasverific = view.findViewById(R.id.inicioSesionFragment)
+        btnatrasverific = view.findViewById(R.id.btnatrasVerifi)
         btnReenviar = view.findViewById(R.id.btn_reenviar)
 
         val textWatcher = VerificationTextWatcher()
@@ -41,6 +41,10 @@ class VerificacionCuentaFragment : Fragment() {
         digit2.addTextChangedListener(textWatcher)
         digit3.addTextChangedListener(textWatcher)
         digit4.addTextChangedListener(textWatcher)
+
+        btnatrasverific.setOnClickListener {
+            parentFragmentManager.popBackStack()
+        }
 
         btnReenviar.setOnClickListener {
             Toast.makeText(activity, "Correo de verificación reenviado", Toast.LENGTH_SHORT).show()
@@ -69,6 +73,8 @@ class VerificacionCuentaFragment : Fragment() {
         }
     }
 }
+
+
 
 
 
