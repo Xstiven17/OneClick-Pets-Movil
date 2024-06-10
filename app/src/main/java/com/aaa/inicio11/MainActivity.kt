@@ -63,11 +63,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_item_five -> {
                 Toast.makeText(this, "Notificaciones", Toast.LENGTH_SHORT).show()
-                // loadFragment(NotificacionesFragment()) // Reemplazar con el fragmento real
+                loadFragment(NotificacionFragment()) // Cargar el fragmento de notificaciones
             }
             R.id.nav_item_six -> {
                 Toast.makeText(this, "Ayuda PQR", Toast.LENGTH_SHORT).show()
-                // loadFragment(AyudaPqrFragment()) // Reemplazar con el fragmento real
+                loadFragment(AyudapqrFragment()) // Reemplazar con el fragmento real
             }
             R.id.nav_item_seven -> {
                 Toast.makeText(this, "Configuración Cuenta", Toast.LENGTH_SHORT).show()
@@ -103,3 +103,5 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         return super.onOptionsItemSelected(item)
     }
 }
+
+

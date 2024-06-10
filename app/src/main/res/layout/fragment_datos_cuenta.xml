@@ -70,7 +70,7 @@
                 android:id="@+id/segundoApellido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Segundo apellido *"
+                android:hint="Segundo apellido"
                 android:textColor="@color/ColorNegro"
                 android:inputType="textPersonName" />
 

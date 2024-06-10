@@ -40,7 +40,7 @@ class InicioSesionFragment : Fragment() {
         }
 
         binding.tvRecuperar.setOnClickListener {
-            Toast.makeText(requireContext(), "Contraseña", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Recuperar", Toast.LENGTH_SHORT).show()
             navigateToVerificacionCuentaFragment()
         }
     }
