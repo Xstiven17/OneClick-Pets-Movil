@@ -1,5 +1,6 @@
 package com.aaa.inicio11
 
+import InicioFragment
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.MenuItem
