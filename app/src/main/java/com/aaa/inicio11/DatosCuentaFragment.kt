@@ -1,41 +1,38 @@
 package com.aaa.inicio11
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.fragment.app.Fragment
+import com.aaa.inicio11.databinding.FragmentDatosCuentaBinding // Corregir el nombre de la clase generada
 
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-class DatosCuentaFragment : Fragment() {
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+class DatosCuentaFragment : Fragment() { // Corregir el nombre de la clase del fragmento
+    private lateinit var binding: FragmentDatosCuentaBinding // Utilizar el nombre correcto de la clase generada
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_datos_cuenta, container, false)
-    }
+    ): View {
+        binding = FragmentDatosCuentaBinding.inflate(inflater, container, false)
+        val view = binding.root
 
-    companion object {
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            DatosCuentaFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        // Asignar clic listeners a los botones
+        binding.backButton.setOnClickListener {
+            Toast.makeText(activity, "Atras clickeado", Toast.LENGTH_SHORT).show()
+            // Aquí puedes agregar la acción que deseas realizar al hacer clic en el botón "Atras"
+        }
+
+        binding.guardarButton.setOnClickListener {
+            Toast.makeText(activity, "Guardar clickeado", Toast.LENGTH_SHORT).show()
+            // Aquí puedes agregar la acción que deseas realizar al hacer clic en el botón "Guardar"
+        }
+
+        return view
     }
 }
+
+
+

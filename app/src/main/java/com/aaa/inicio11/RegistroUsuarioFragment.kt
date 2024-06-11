@@ -1,5 +1,7 @@
 package com.aaa.inicio11
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -36,12 +38,18 @@ class RegistroUsuarioFragment : Fragment() {
 
         // Configurar los listeners para los botones de Facebook y Gmail
         binding.btnfacebook.setOnClickListener {
-            mostrarDialogoInicioSesion()
+            abrirPaginaFacebook()
         }
 
         binding.btngmail.setOnClickListener {
             mostrarDialogoInicioSesion()
         }
+    }
+
+    private fun abrirPaginaFacebook() {
+        val facebookLoginUrl = "https://www.facebook.com/login.php"
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(facebookLoginUrl))
+        startActivity(intent)
     }
 
     private fun mostrarDialogoInicioSesion() {
@@ -59,4 +67,5 @@ class RegistroUsuarioFragment : Fragment() {
         _binding = null
     }
 }
+
 

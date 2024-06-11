@@ -1,18 +1,15 @@
 package com.aaa.inicio11
 
-import android.health.connect.datatypes.units.Length
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.aaa.inicio11.databinding.FragmentConfigCuentaBinding
 
-
-@Suppress("UNREACHABLE_CODE")
-class ConfigCuentaFragment : Fragment() {
+class ConfigCuentaFragment: Fragment() {
 
     private var _binding: FragmentConfigCuentaBinding? = null
     private val binding get() = _binding!!
@@ -23,21 +20,15 @@ class ConfigCuentaFragment : Fragment() {
     ): View? {
         _binding = FragmentConfigCuentaBinding.inflate(inflater, container, false)
         return binding.root
+    }
 
-
-        binding.ivSecurity.bringToFront()
-        binding.ivCards.bringToFront()
-        binding.ivAccountData.bringToFront()
-        binding.ivDeleteAccount.bringToFront()
-        binding.ivProfile.bringToFront()
-
-
-
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         // Configuración del click listener para el ImageButton ivSecurity
         binding.ivSecurity.setOnClickListener {
             Toast.makeText(activity, "Seguridad clickeado", Toast.LENGTH_SHORT).show()
-           // findNavController().navigate(R.id.action_configCuentaFragment_to_DatoCuenta)
+            // Aquí puedes agregar la navegación correspondiente si es necesario
         }
 
         // Configuración del click listener para el ImageButton ivCards
@@ -48,6 +39,7 @@ class ConfigCuentaFragment : Fragment() {
         // Configuración del click listener para el ImageView ivAccountData
         binding.ivAccountData.setOnClickListener {
             Toast.makeText(activity, "Datos de cuenta clickeado", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.datosCuentaFragment)
         }
 
         // Configuración del click listener para el ImageView ivDeleteAccount
@@ -55,21 +47,19 @@ class ConfigCuentaFragment : Fragment() {
             Toast.makeText(activity, "Eliminar cuenta clickeado", Toast.LENGTH_SHORT).show()
         }
 
-        // Configuración del click listener para el ImageView ivProfilePicture
+        // Configuración del click listener para el ImageView ivProfile
         binding.ivProfile.setOnClickListener {
             Toast.makeText(activity, "Imagen de perfil clickeado", Toast.LENGTH_SHORT).show()
         }
-
-
-
-
-}
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 }
+
+
 
 
 
