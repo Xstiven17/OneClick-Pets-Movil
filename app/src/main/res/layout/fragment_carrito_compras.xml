@@ -30,13 +30,14 @@
             android:textSize="18dp" />
     </LinearLayout>
 
-<androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/Recy_carrito"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/ColorRelleno"
-    android:layout_weight="1"
-    android:layout_marginTop="95dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Recy_carrito"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_above="@+id/rectan2Car"
+        android:layout_below="@id/rectan1Car"
+        android:layout_weight="1"
+        android:background="@color/ColorRelleno" />
 
     <LinearLayout
         android:id="@+id/rectan2Car"

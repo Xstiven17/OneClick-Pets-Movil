@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/ColorRelleno"
     android:orientation="horizontal"
     android:padding="16dp">
 
@@ -18,15 +18,16 @@
             android:id="@+id/img_product"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop" />
 
-        <NumberPicker
-            android:id="@+id/cantidad"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="35dp"
-            tools:maxValue="100"
-            tools:minValue="1"/>
+        <Spinner
+            android:id="@+id/cantidad_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:maxValue="10"
+            tools:minValue="1"
+            android:layout_marginTop="35dp"/>
+
     </LinearLayout>
 
         <LinearLayout
@@ -47,8 +48,8 @@
 
     <ImageView
         android:id="@+id/imagbasura"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="85dp"
         android:src="@drawable/basura" />
