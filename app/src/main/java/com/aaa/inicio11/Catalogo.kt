@@ -1,3 +1,9 @@
 package com.aaa.inicio11
 
-data class Catalogo (val producto:String,  )
+import android.provider.MediaStore.Images
+
+data class Catalogo (
+    val producto:String,
+    val precio:String,
+    val photo:String,
+)
