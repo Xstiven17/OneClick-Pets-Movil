@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.aaa.inicio11.adapter.ProductProvider
-import com.aaa.inicio11.adapter.ProductoAdapter
+import com.aaa.inicio11.adaptercc.ProductProvider
+import com.aaa.inicio11.adaptercc.ProductoAdapter
 
 class CarritoComprasFragment : Fragment() {
 

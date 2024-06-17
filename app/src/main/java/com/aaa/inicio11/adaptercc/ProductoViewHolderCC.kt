@@ -1,4 +1,4 @@
-package com.aaa.inicio11.adapter
+package com.aaa.inicio11.adaptercc
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

@@ -1,6 +1,7 @@
 package com.aaa.inicio11
 
 import InicioFragment
+import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.MenuItem
@@ -52,7 +53,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_item_two -> {
                 Toast.makeText(this, "Catálogo", Toast.LENGTH_SHORT).show()
-                // loadFragment(CatalogoFragment()) // Reemplazar con el fragmento real
+                // Iniciar ContenedorCatalogo cuando se selecciona "Catálogo"
+                startActivity(Intent(this, ContenedorCatalogo::class.java))
             }
             R.id.nav_item_three -> {
                 Toast.makeText(this, "Categoría Mascotas", Toast.LENGTH_SHORT).show()

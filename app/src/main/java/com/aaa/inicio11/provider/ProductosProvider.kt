@@ -1,4 +1,4 @@
-package com.aaa.inicio11.adapter
+package com.aaa.inicio11.adaptercc
 
 import com.aaa.inicio11.model.Producto
 
