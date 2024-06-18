@@ -30,38 +30,38 @@
 
     </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
 
+
+
+        <ImageView
+            android:id="@+id/imagbasura"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/basura" />
+
+    </LinearLayout>
     <TextView
         android:id="@+id/nom_product"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="OneClick Pets"
-        android:textStyle="bold"
+        android:textColor="@color/ColorNegro"
         android:textSize="18dp"
-        android:textColor="@color/ColorNegro"/>
-
-    <ImageView
-        android:id="@+id/imagbasura"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="85dp"
-        android:src="@drawable/basura" />
-
-        </LinearLayout>
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginStart="-80dp"
         android:layout_marginTop="110dp">
 
         <TextView
@@ -74,12 +74,12 @@
         android:layout_marginBottom="8dp"/>
 
         <TextView
-        android:id="@+id/precio"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Precio: $"
-        android:textColor="@color/ColorNegro"
-        android:textSize="18dp" />
+            android:id="@+id/precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio: $"
+            android:textColor="@color/ColorNegro"
+            android:textSize="18dp" />
     </LinearLayout>
 
 </LinearLayout>

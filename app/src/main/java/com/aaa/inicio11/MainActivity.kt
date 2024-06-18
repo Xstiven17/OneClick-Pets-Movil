@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_item_four -> {
                 Toast.makeText(this, "Carrito Compras", Toast.LENGTH_SHORT).show()
-                // loadFragment(CarritoComprasFragment()) // Reemplazar con el fragmento real
+                 loadFragment(CarritoComprasFragment()) 
             }
             R.id.nav_item_five -> {
                 Toast.makeText(this, "Notificaciones", Toast.LENGTH_SHORT).show()

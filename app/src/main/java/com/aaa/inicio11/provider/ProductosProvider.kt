@@ -5,11 +5,11 @@ import com.aaa.inicio11.model.Producto
 object ProductProvider {
 
     private val productosList = mutableListOf(
-        Producto("Cama para Perro", 100.0),
-        Producto("Dispensador de Alimento", 150.0),
-        Producto("Frisbee", 80.0),
-        Producto("Alimento para ave", 80.0),
-        Producto("Raton Juguete", 80.0),
+        Producto("Cama para Perro", 86.000),
+        Producto("Dispensador de Alimento", 56.000),
+        Producto("Frisbee", 20.800),
+        Producto("Alimento para gato 1Kg", 34.000),
+        Producto("Raton Juguete ", 8.500),
     )
 
     // Método para obtener la lista de productos
